@@ -1,41 +1,78 @@
 # Cycling Sport and Perceived Human Development:
 ## Exploratory Construction of a Multidimensional Index among Young Cyclists from Bogotá
 
-![Status](https://img.shields.io/badge/status-exploratory%20research-blue)
+![Research Status](https://img.shields.io/badge/status-exploratory%20research-blue)
+![Language](https://img.shields.io/badge/code-R-blue)
+![Field](https://img.shields.io/badge/field-Applied%20Economics%20%7C%20Human%20Development-green)
 
-## Overview
+---
 
-This repository contains the data processing workflow, statistical analysis and visualization scripts developed for the construction of the **Perceived Human Development Index (PHDI)**.
+# Overview
 
-The project explores how participation in organized cycling sport is associated with perceived changes in multidimensional human development dimensions among young cyclists from Bogotá, Colombia.
+This repository contains the complete analytical workflow for the exploratory construction of the **Perceived Human Development Index (PHDI)** among young cyclists participating in an organized cycling sport context in Bogotá, Colombia.
 
-The study follows an exploratory pre-post design and focuses on three dimensions:
+The project examines whether participation in cycling sport is associated with changes in perceived human development dimensions through a multidimensional index approach.
 
-- Psychological Well-being
-- Social Capital
-- Personal Development
+Rather than measuring development exclusively through economic indicators, this project follows a broader human development perspective that incorporates personal, emotional and social dimensions.
 
-The objective is not to estimate causal effects, but to construct and explore a multidimensional measure of perceived human development within a sport context.
+The study uses an exploratory **pre-post design** to compare participants' perceived development before and after their participation in a cycling team.
 
 ---
 
 # Research Question
 
-How does participation in organized cycling sport relate to perceived changes in human development dimensions among young cyclists?
+**How is participation in organized cycling sport associated with perceived changes in multidimensional human development among young cyclists?**
+
+---
+
+# Research Objective
+
+The objective of this project is to construct and explore a multidimensional indicator capable of capturing perceived changes in human development dimensions within a sport context.
+
+The project focuses on three main dimensions:
+
+1. Psychological Well-being
+2. Social Capital
+3. Personal Development
 
 ---
 
 # Conceptual Framework
 
-The project is based on a multidimensional understanding of human development, where development extends beyond economic outcomes and includes personal capabilities, social relationships and well-being.
+The project is based on a multidimensional understanding of human development.
 
-The PHDI operationalizes this approach through three dimensions:
+Development is considered not only as an economic outcome, but as an expansion of individuals' capabilities, opportunities and social conditions.
 
-## Psychological Well-being
+The Perceived Human Development Index (PHDI) operationalizes this perspective by combining personal and social dimensions measured through participant perceptions.
 
-Captures perceived emotional and relational aspects.
+---
 
-Indicators include:
+# Perceived Human Development Index (PHDI)
+
+The PHDI is an exploratory composite index constructed from three equally weighted dimensions.
+
+The global index is calculated as:
+
+\[
+PHDI =
+\frac{
+Psychological\ Well-being +
+Social\ Capital +
+Personal\ Development
+}{3}
+\]
+
+Equal weighting was selected because each dimension represents an independent conceptual component of perceived human development and no empirical basis was available to assign differential weights.
+
+---
+
+# Dimensions and Indicators
+
+## 1. Psychological Well-being
+
+This dimension captures perceived emotional and relational well-being.
+
+Indicators included:
 
 - Joy
 - Gratitude
@@ -43,24 +80,26 @@ Indicators include:
 - Relationships with others
 - Care and protection
 
+---
 
-## Social Capital
+## 2. Social Capital
 
-Captures collective and relational capabilities.
+This dimension captures collective capabilities and social relationships developed within the cycling environment.
 
-Indicators include:
+Indicators included:
 
 - Teamwork
 - Communication
 - Leadership
 - Respect
 
+---
 
-## Personal Development
+## 3. Personal Development
 
-Captures perceived individual growth.
+This dimension captures perceived individual growth and personal capabilities.
 
-Indicators include:
+Indicators included:
 
 - Positive attitude and mindset
 - Adaptability
@@ -68,35 +107,32 @@ Indicators include:
 
 ---
 
-# Index Construction
+# Indicator Selection and Measurement Constraints
 
-Each dimension is calculated as the mean of its indicators.
+Indicator selection was constrained by the original survey instrument.
 
-The overall index is:
+Although autonomy and self-confidence are relevant dimensions in capability-based approaches, they were not included because the questionnaire did not contain direct measures for these constructs.
 
-\[
-PHDI = \frac{Psychological\ Well-being + Social\ Capital + Personal\ Development}{3}
-\]
-
-
-Equal weighting was selected because no empirical basis existed for assigning different weights among dimensions.
+Therefore, only constructs with direct observable measures in the original survey were incorporated into the PHDI.
 
 ---
 
-# Data
+# Data Description
 
-## Population
+## Study Context
 
-Young cyclists participating in the Kronos MTR cycling team in Bogotá, Colombia.
+The study focuses on young cyclists participating in the Kronos MTR cycling team in Bogotá, Colombia.
 
 ## Sample
 
-25 participants.
+Initial sample:
 
-Complete paired observations were used for pre-post statistical comparisons.
+- 25 participants
+
+Complete paired observations were used for pre-post statistical comparisons after excluding missing values.
 
 ---
 
 # Analytical Workflow
 
-The project follows a reproducible workflow:
+The project follows a reproducible analytical pipeline:
